@@ -15,9 +15,9 @@ public class WebControlador {
     private UserService servicioUser;
 
     @GetMapping ("/")
-    public String inicio(Model modelo){
+    public String index(Model modelo){
 
-        return "inicio";
+        return "index";
     }
     @GetMapping ("/listado")
     public String listarUser(Model modelo){

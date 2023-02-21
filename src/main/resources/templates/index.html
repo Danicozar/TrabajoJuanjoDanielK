@@ -8,7 +8,7 @@
   <link rel="stylesheet" th:href="@{/css/main.css}">
 </head>
 <body>
-<header><img src="../static/img/pasta-alfredo.jpg" height="559" width="745"/>
+<header>
   <section class="header-icons-container">
   </section>
   <nav>
@@ -16,14 +16,14 @@
       <a href="/"><img th:src="@{/img/LogoMientrasHagoLimonada.PNG}" alt="Logo de mi blog" > </a>
     </section>
     <section class="profile-link">
-      <a href="perfil.html">Sobre mí</a>
+      <a th:href="perfil.html">Sobre mí</a>
     </section>
   </nav>
 </header>
 <main class="home-main">
   <section>
     <h1 class="home-main-text">¡Conoce las novedades y <br> noticias del mundo de la cocina!</h1>
-    <a class="home-main-button" href="blogs.html">¡Entra ya!</a>
+    <a class="home-main-button" th:href="blogs.html">¡Entra ya!</a>
   </section>
 </main>
 </body>

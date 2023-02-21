@@ -20,7 +20,7 @@ public class WebControlador {
         return "index";
     }
 
-    @GetMapping ("/inicio")
+    @GetMapping ("/blogs.html")
     public String inicio(Model modelo){
 
         return "/html/blogs";

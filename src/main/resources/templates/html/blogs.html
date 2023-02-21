@@ -5,7 +5,7 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <meta http-equiv="X-UA-Compatible" content="ie=edge">
   <title>MientrasHagoLimonada</title>
-  <link rel="stylesheet" href="main.css">
+  <link rel="stylesheet" th:href="@{/css/main.css}">
 </head>
 <body>
 <header>
@@ -13,10 +13,10 @@
   </section>
   <nav>
     <section class="nav-logo-container">
-      <a href="/"><img src="LogoMientrasHagoLimonada.PNG" alt="Logo de mi blog" > </a>
+      <a href="/"><img th:src="@{/img/LogoMientrasHagoLimonada.PNG}" alt="Logo de mi blog" > </a>
     </section>
     <section class="profile-link">
-      <a href="perfil.html">Sobre mí</a>
+      <a th:href="perfil.html">Sobre mí</a>
     </section>
   </nav>
 </header>
@@ -30,7 +30,7 @@
       <div class="blogs-news-info-container">
         <h2>MientrasHagoLimonada</h2>
         <p>Si en algún momento fuiste fan del blog MientrasHagoLimonada, descubre la historia detrás de nuestro regreso.</p>
-        <a href="info.html" class="blogs-button">Leer más</a>
+        <a th:href="info.html" class="blogs-button">Leer más</a>
       </div>
     </div>
   </section>

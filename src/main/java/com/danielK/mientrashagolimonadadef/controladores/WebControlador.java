@@ -19,6 +19,13 @@ public class WebControlador {
 
         return "index";
     }
+
+    @GetMapping ("/inicio")
+    public String inicio(Model modelo){
+
+        return "/html/blogs";
+    }
+
     @GetMapping ("/listado")
     public String listarUser(Model modelo){
         modelo.addAttribute("user",servicioUser.listarUser());

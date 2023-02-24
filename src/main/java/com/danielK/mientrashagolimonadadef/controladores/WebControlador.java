@@ -20,43 +20,55 @@ public class WebControlador {
         return "index";
     }
 
-    @GetMapping ("/blogs.html")
+    @GetMapping ("/info")
+    public String info(Model modelo){
+
+        return "/html/info";
+    }
+
+    @GetMapping ("/perfil")
+    public String perfil(Model modelo){
+
+        return "/html/perfil";
+    }
+
+    @GetMapping ("/blogs")
     public String inicio(Model modelo){
 
         return "/html/blogs";
     }
 
-    @GetMapping ("/Entrada_BYogurt.html")
+    @GetMapping ("/Entrada_BYogurt")
     public String entrada1(Model modelo){
 
         return "/html/Entrada_BYogurt";
     }
 
-    @GetMapping ("/Entrada_Gachamiga.html")
+    @GetMapping ("/Entrada_Gachamiga")
     public String entrada2(Model modelo){
 
         return "/html/Entrada_Gachamiga";
     }
 
-    @GetMapping ("/Entrada_Lasagna.html")
+    @GetMapping ("/Entrada_Lasagna")
     public String entrada3(Model modelo){
 
         return "/html/Entrada_Lasagna";
     }
 
-    @GetMapping ("/Entrada_Pasta_Alfredo.html")
+    @GetMapping ("/Entrada_Pasta_Alfredo")
     public String entrada4(Model modelo){
 
         return "/html/Entrada_Pasta_Alfredo";
     }
 
-    @GetMapping ("/Entrada_Raffaello.html")
+    @GetMapping ("/Entrada_Raffaello")
     public String entrada5(Model modelo){
 
         return "/html/Entrada_Raffaello";
     }
 
-    @GetMapping ("/Entrada_Tarta_Queso.html")
+    @GetMapping ("/Entrada_Tarta_Queso")
     public String entrada6(Model modelo){
 
         return "/html/Entrada_Lasagna";

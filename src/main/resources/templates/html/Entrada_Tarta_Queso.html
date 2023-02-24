@@ -5,7 +5,7 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <meta http-equiv="X-UA-Compatible" content="ie=edge">
   <title>MientrasHagoLimonada</title>
-  <link rel="stylesheet" href="main.css">
+  <link rel="stylesheet" th:href="@{/css/main.css}">
 </head>
 <body>
 <header>
@@ -13,7 +13,7 @@
   </section>
   <nav>
     <section class="nav-logo-container">
-      <a href="/"><img src="LogoMientrasHagoLimonada.PNG" alt="" > </a>
+      <a href="/"><img th:src="@{/img/LogoMientrasHagoLimonada.PNG}" alt="" > </a>
     </section>
     <section class="profile-link">
       <a href="blogs.html">Vuelta a lo bueno</a>

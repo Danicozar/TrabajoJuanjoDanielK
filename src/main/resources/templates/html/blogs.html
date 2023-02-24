@@ -16,7 +16,7 @@
       <a href="/"><img th:src="@{/img/LogoMientrasHagoLimonada.PNG}" alt="Logo de mi blog" > </a>
     </section>
     <section class="profile-link">
-      <a th:href="perfil.html">Sobre mí</a>
+      <a href="/perfil">Sobre mí</a>
     </section>
   </nav>
 </header>
@@ -25,12 +25,12 @@
     <div class="grid-container blogs-main-new">
       <h3>¡MientrasHagoLimonada está de vuelta!</h3>
       <div class="blogs-news-img-container">
-        <img th:src="limonero.jpg" alt="">
+        <img src="limonero.jpg" alt="">
       </div>
       <div class="blogs-news-info-container">
         <h2>MientrasHagoLimonada</h2>
         <p>Si en algún momento fuiste fan del blog MientrasHagoLimonada, descubre la historia detrás de nuestro regreso.</p>
-        <a th:href="info.html" class="blogs-button">Leer más</a>
+        <a href="/info" class="blogs-button">Leer más</a>
       </div>
     </div>
   </section>
@@ -38,40 +38,40 @@
     <div class="grid-container">
       <h3></h3>
       <article class="post-container">
-        <img src="TartaQueso.jpg" alt="">
+        <img th:src="@{/img/TartaQueso.jpg}" alt="">
         <p>Tarta de Queso y Limón</p>
         <p>Si deseas aprender a hacer una tarta de queso para chuparse los dedos, este es tu sitio.</p>
-        <a href="Entrada_Tarta_Queso.html" class="blogs-button">Leer más</a>
+        <a href="/Entrada_Tarta_Queso" class="blogs-button">Leer más</a>
       </article>
       <article class="post-container">
-        <img src="bizcochoYogur.jpg" alt="">
+        <img th:src="@{/img/bizcochoYogur.jpg}" alt="">
         <p>Bizcocho de yogurt</p>
         <p>Seguramente nunca has probado un bizcocho de yogurt como este. ¿A que esperas?</p>
-        <a href="Entrada_BYogurt.html" class="blogs-button">Leer más</a>
+        <a href="/Entrada_BYogurt" class="blogs-button">Leer más</a>
       </article>
       <article class="post-container">
-        <img src="rafaeloblanca.jpg" alt="">
+        <img th:src="@{/img/rafaeloblanca.jpg}" alt="">
         <p>Tarta Raffaello</p>
         <p>Sin duda mi tarta favorita. Una explosión de sabor. Tómalo como recomendación personal.</p>
-        <a href="Entrada_Raffaello.html" class="blogs-button">Leer más</a>
+        <a href="/Entrada_Raffaello" class="blogs-button">Leer más</a>
       </article>
       <article class="post-container">
-        <img src="lasañabolo.jpg" alt="">
+        <img th:src="@{/img/lasañabolo.jpg}" alt="">
         <p>Lasaña Boloñesa</p>
         <p>Ni el mismisimo hijo de la grandisima put* de Garfield ha probado una lasaña semejante.</p>
-        <a href="Entrada_Lasagna.html" class="blogs-button">Leer más</a>
+        <a href="/Entrada_Lasagna" class="blogs-button">Leer más</a>
       </article>
       <article class="post-container">
-        <img src="receta-de-pasta-con-salsa-alfredo.jpg" alt="">
+        <img th:src="@{/img/Pasta-Alfredoo.jpg}" alt="">
         <p>Pasta Alfredo</p>
         <p>La pasta que me solia preparar mi tio Alfredo, pero ahora en mi blog.</p>
-        <a href="Entrada_Pasta_Alfredo.html" class="blogs-button">Leer más</a>
+        <a href="/Entrada_Pasta_Alfredo" class="blogs-button">Leer más</a>
       </article>
       <article class="post-container">
-        <img src="Plato-de-gachamigas.png" alt="">
+        <img th:src="@{/img/Plato-de-gachamigas.png}" alt="">
         <p>Gachamiga de Siles</p>
         <p>Gachamiga. El plato estrella de Jaén, al mas puro estilo Sileño. ¡Que empape!</p>
-        <a href="Entrada_Gachamiga.html" class="blogs-button">Leer más</a>
+        <a href="/Entrada_Gachamiga" class="blogs-button">Leer más</a>
       </article>
     </div>
   </section>

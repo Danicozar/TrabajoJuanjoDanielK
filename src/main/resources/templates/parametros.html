@@ -1,0 +1,15 @@
+<!DOCTYPE html SYSTEM "http://www.thymeleaf.org/dtd/xhtml1-strict-thymeleaf-4.dtd">
+<html lang="es"
+      xmlns="http://www.w3.org/1999/xhtml"
+      xmlns:th="http://www.thymeleaf.org"
+      xmlns:sec="http://www.thymeleaf.org/extras/spring-security">
+<head th:replace="head/head :: mihead"></head>
+<body>
+Parámetros:
+<h1 th:text="${a}">aaaaa</h1>
+<h2 th:text="${b}">bbbb</h2>
+<h3 th:text="${c}">cccc</h3>
+
+<footer th:replace="foot/pie :: pie"></footer>
+</body>
+</html>

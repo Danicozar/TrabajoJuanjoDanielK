@@ -1,0 +1,43 @@
+<!DOCTYPE html SYSTEM "http://www.thymeleaf.org/dtd/xhtml1-strict-thymeleaf-4.dtd">
+<html lang="es"
+      xmlns="http://www.w3.org/1999/xhtml"
+      xmlns:th="http://www.thymeleaf.org"
+      xmlns:sec="http://www.thymeleaf.org/extras/spring-security">
+<head th:replace="~{head/head :: mihead}"></head>
+
+<body class="d-flex flex-column h-100">
+<header th:replace="~{menu/m1 :: usuarios}"></header>
+<div class="p-5 mb-4 bg-light rounded-3">
+    <div class="container-fluid py-5">
+        <h1 class="display-5 fw-bold">Nuevo usuario</h1>
+        <p class="col-md-8 fs-4">Ejemplo de CRUD</p>
+        <a class="btn btn-lg btn-primary" href="https://2dam.fp.edu.es/gitea/conecta2">Código fuente</a>
+    </div>
+</div>
+
+<main>
+    <div class="container">
+        <form th:action="@{/guardar}" th:object="${user}" method="post">
+            <table class="table table-sm">
+                <thead>
+                <tr>
+                    <th scope="col">#idUsuario</th>
+                    <th scope="col">Nombres</th>
+                    <th scope="col"></th>
+                </thead>
+                <tbody>
+                    <th><input type="text" name="idUsuario" th:field="*{idUsuario}" class="form-control" placeholder="Nº de usuario" required></th>
+                    <td><input type="text" name="nombres" th:field="*{nombres}" class="form-control" placeholder="Nombre y apellidos" required></td>
+                    <td><button class="btn btn-success" >CREAR</button></td>
+                </tbody>
+            </table>
+        </form>
+    </div>
+</main>
+
+
+
+<footer th:replace="~{foot/pie :: pie}"></footer>
+
+</body>
+</html>

@@ -26,6 +26,42 @@ public class WebControlador {
         return "/html/blogs";
     }
 
+    @GetMapping ("/Entrada_BYogurt.html")
+    public String entrada1(Model modelo){
+
+        return "/html/Entrada_BYogurt";
+    }
+
+    @GetMapping ("/Entrada_Gachamiga.html")
+    public String entrada2(Model modelo){
+
+        return "/html/Entrada_Gachamiga";
+    }
+
+    @GetMapping ("/Entrada_Lasagna.html")
+    public String entrada3(Model modelo){
+
+        return "/html/Entrada_Lasagna";
+    }
+
+    @GetMapping ("/Entrada_Pasta_Alfredo.html")
+    public String entrada4(Model modelo){
+
+        return "/html/Entrada_Pasta_Alfredo";
+    }
+
+    @GetMapping ("/Entrada_Raffaello.html")
+    public String entrada5(Model modelo){
+
+        return "/html/Entrada_Raffaello";
+    }
+
+    @GetMapping ("/Entrada_Tarta_Queso.html")
+    public String entrada6(Model modelo){
+
+        return "/html/Entrada_Lasagna";
+    }
+
     @GetMapping ("/listado")
     public String listarUser(Model modelo){
         modelo.addAttribute("user",servicioUser.listarUser());

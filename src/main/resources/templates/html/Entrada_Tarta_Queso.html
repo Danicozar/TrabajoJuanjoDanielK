@@ -16,7 +16,7 @@
       <a href="/"><img th:src="@{/img/LogoMientrasHagoLimonada.PNG}" alt="" > </a>
     </section>
     <section class="profile-link">
-      <a href="blogs.html">Vuelta a lo bueno</a>
+      <a href="/blogs">Vuelta a lo bueno</a>
     </section>
   </nav>
 </header>
@@ -24,7 +24,7 @@
 </div>
 <main>
   <section class="grid-container blogpost-img-container">
-    <img src="TartaQueso.jpg" alt="">
+    <img th:src="@{/img/TartaQueso.jpg}" alt="">
   </section>
   <section class="blogpost-main-container">
     <div class="grid-container">
@@ -65,16 +65,16 @@
   </section>
   <section class="contact-main-container">
     <div>
-      <img src="limonero.jpg" alt="">
+      <img th:src="@{/img/limonero.jpg}" alt="">
       <div class="contact-left">
-        <a href="perfil.html">Contacto</a>
+        <a href="/perfil">Contacto</a>
         <p>Conóceme un poco.</p>
       </div>
     </div>
     <div>
-      <img src="limonero.jpg" alt="">
+      <img th:src="@{/img/limonero.jpg}" alt="">
       <div class="contact-right">
-        <a href="login.html">Escribe</a>
+        <a href="/login">Escribe</a>
         <p>Accede a la sección de comentarios.</p>
       </div>
     </div>

@@ -1,0 +1,45 @@
+<!DOCTYPE html SYSTEM "http://www.thymeleaf.org/dtd/xhtml1-strict-thymeleaf-4.dtd">
+<html lang="es"
+      xmlns="http://www.w3.org/1999/xhtml"
+      xmlns:th="http://www.thymeleaf.org"
+      xmlns:sec="http://www.thymeleaf.org/extras/spring-security">
+<head th:replace="~{head/head :: mihead}"></head>
+
+
+
+<body class="d-flex flex-column h-100">
+<header th:replace="~{menu/m1 :: usuarios}"></header>
+<div class="p-5 mb-4 bg-light rounded-3">
+    <div class="container-fluid py-5">
+        <h1 class="display-5 fw-bold">Entradas.</h1>
+    </div>
+</div>
+
+<main>
+    <div class="container">
+        <a th:href="@{/nuevo}" class="btn btn-success">Añadir</a>
+        <table class="table table-sm">
+            <thead>
+            <tr>
+                <th scope="col">#idEntrada</th>
+                <th scope="col">nombreEntrada</th>
+                <th scope="col">contenido</th>
+            </thead>
+            <tbody>
+            <tr th:each="entrada :${entrada} ">
+                <th scope="row" th:text="${entrada.idEntrada}">1</th>
+                <td th:text="${entrada.nombreEntrada}">Tarta</td>
+                <td>
+                    <a th:href="@{/editar/{id}(id=${entrada.idEntrada})}" class="btn btn-info">Editar</a> |
+                    <a th:href="@{/borrar/{id}(id=${entrada.idEntrada})}" class="btn btn-danger">Borrar</a>
+                </td>
+            </tr>
+
+            </tbody>
+        </table>
+
+    </div>
+</main>
+
+</body>
+</html>

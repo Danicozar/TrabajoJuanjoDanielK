@@ -80,6 +80,12 @@ public class WebControlador {
         return "usuarios";
     }
 
+    @GetMapping ("/listado2")
+    public String listarEntrada(Model modelo){
+        modelo.addAttribute("user",servicioUser.listarUser());
+        return "entradas";
+    }
+
     @GetMapping ("/nuevo")
     public String nuevoUser(Model modelo){
         User usuario = new User();
